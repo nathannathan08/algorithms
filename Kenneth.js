@@ -27,6 +27,7 @@ function rockPaperScissors(input) {
   let opponentChoice;
   let outcome;
 
+  //this is a function. it has iteration (for), selection (many if statements based on what is chosen), and sequencing)
   for (let i = 0; i <= random; i++) {
     if (i % 3 == 0) {
       opponentChoice = "rock";
@@ -83,6 +84,7 @@ function getHistory() {
   let lose = 0;
   let draw = 0;
 
+  //this is another function. it has order, condition based decisions, and iteration using loops.
   for (let i = 0; i < history.length; i++) {
     if (history[i] == "win") {
       win++;
