@@ -1,24 +1,12 @@
-function factorial(n) {
-    //guard clause
-    if(n < 1){
-        return;        //kills the function
-    }
-    let result = 1;
-    for(let i = 1; i <= n; i++){
-result *= i;
-    }
-    return result
-}
-console.log(factorial(7));
+function decimalToBinary(decimal) {
+    if (decimal < 0 || !Number.isInteger(decimal)) {
+        return "Enter a non negative integr you absolute smelly person.";
 
-function newFactorial(n) {
-    if(n > 0) {
-        let result = 1;
-        for(let i = 1; i <= n; i++){
-    result *= i;
     }
-    return result;
-} else {
-    return;
+    let binary = decimal.toString(2);
+    return binary;
 }
-}
+
+let decimalNumber = 26;
+let binaryResult = decimalToBinary(decimalNumber);
+console.log(`The binary of ${decimalNumber} is ${binaryResult}.`);
