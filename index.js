@@ -1,12 +1,12 @@
-function binarytoDecimal(binary) {
-    if (binary < 0 || !Number.isInteger(binary)) {
-        return "Enter a non negative integer you actual genuinely horrible person. I hate you. I hate you with every fiber of my being. You are the reason humanity is doomed to failure. You are the scum of the earth. You are a rat. A scoundrel. A disease. And I wish upon you a thousand lifetimes of pain. No offense.";
-        
+function decimalToBinary(decimal) {
+    if (decimal < 0 || !Number.isInteger(decimal)) {
+        return "Enter a non negative integer. You are a fool. You are a silly little goose. What kind of person would EVER input a negative number? Come on man. Pull yourself together. Don't come to me with your wacky shenanigans. Everyone get a load of Mx. Negative Number's negative number nonsense. Get a load of this doofus. This silly person thinks they're such a quirky little guy by putting in a negative number. Get a grip, man";
+
     }
-    let decimal = parseInt(binary.toString(), 2);
-    return decimal;
+    let binary = decimal.toString(2);
+    return binary;
 }
 
-let binaryNumber = 101;
-let decimalResult = binarytoDecimal(binaryNumber);
-console.log(`The decimal version of ${binaryNumber} is ${decimalResult}.`);
+let decimalNumber = 26;
+let binaryResult = decimalToBinary(decimalNumber);
+console.log(`The binary of ${decimalNumber} is ${binaryResult}.`);
